@@ -1,0 +1,210 @@
+/* Gaya dasar untuk semua perangkat */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://img.freepik.com/free-photo/fresh-coffee-steams-wooden-table-close-up-generative-ai_188544-8923.jpg?t=st=1729778117~exp=1729781717~hmac=621966013d7b35369456547e296fa91fb4f188f8ec7dbd14cc21d3e3c03f0772&w=1060") no-repeat center center fixed;
+    background-size: cover;
+    /* Membuat gambar menyesuaikan seluruh layar */
+    background-attachment: fixed;
+    /* Agar background tidak ikut bergerak saat scroll */
+    color: #ebdbdb;
+}
+
+header {
+    background: #661d1d79;
+    color: #0e0d0d;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #f8f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-image,
+.home-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #883e3e94;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+
+/* General Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Slideshow Styling */
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Fade animation */
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .slideshow-container {
+        height: 300px;
+    }
+}
+
+
+/* Media Query untuk perangkat HP (Mobile) */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav {
+        position: static;
+        text-align: center;
+    }
+    .section {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 24px;
+    }
+    .profile-image,
+    .home-image {
+        width: 100%;
+    }
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+/* Media Query untuk perangkat Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .profile-image,
+    .home-image {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+
+/* Media Query untuk Laptop/PC */
+
+@media only screen and (min-width: 993px) {
+    body {
+        font-size: 18px;
+    }
+    nav ul li {
+        margin: 0 20px;
+    }
+    .section {
+        padding: 30px;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    .profile-image,
+    .home-image {
+        width: 100%;
+        max-width: 1024px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="welcomeMessage">My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <h2>Home</h2>
+
+            <!-- Auto Banner Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="https://img.freepik.com/free-photo/brown-coffee-beans-seed_74190-6651.jpg?t=st=1729777467~exp=1729781067~hmac=ead30a377e3062cce8228dc59c46584707e58d123c25e5a586daedc9773bf8c3&w=900" alt="Banner 1" class="banner-image" />
+                </div>
+                <div class="slide fade">
+                    <img src="https://img.freepik.com/free-vector/realistic-coffee-background-with-drawings_79603-603.jpg?t=st=1729778995~exp=1729782595~hmac=aa707bbe88beb6e75a0a63ec9eb542a248160677b3bc18b254fba5f1fe601f93&w=900" alt="Banner 2" class="banner-image" />
+                </div>
+                <div class="slide fade">
+                    <img src="https://img.freepik.com/free-photo/person-serving-cup-coffee_1286-227.jpg?t=st=1729779081~exp=1729782681~hmac=8a2ca7a102d2870c45cb29ebf1edf455b8e008309cd62b782940a648800ae9e1&w=740" alt="Banner 3" class="banner-image" />
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <h2>Profile</h2>
+            <p>Hello, my name is Fajar Hafiz Janitra I am a recent graduate from Politeknik Negeri Jakarta, with a background in Electrical Engineering, specifically the Telecommunication study program. During my education, I have acquired the practical
+                and theoretical skills necessary for success in the technology and engineering industry. With an in-depth knowledge of electrical systems, electronics, and the latest technologies. I have the ability to be analytical and work both in a
+                team and independently
+            </p>
+        </section>
+
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-item left">
+                    <h3>Project 1</h3>
+                    <p> Projects (2023): In this project, I was responsible for designing and implementing an LED running text system on the HSE (Health, Safety, and Environment) information board at PT Nindya Karya. The aim of this project was to enhance
+                        communication of important information related to health and safety at work to all employees in the company.</p>
+
+                </div>
+                <div class="portfolio-item right">
+                    <h3>Project 2</h3>
+                    <p> Projects (2024): In this project, I was responsible for designing and building a control and monitoring system for tomato plant parameters using LoRa (Long Range) technology based on the Internet of Things (IoT). This project aims
+                        to enhance agricultural efficiency by allowing farmers to monitor and control plant conditions in real-time from a distance.</p>
+                </div>
+        </section>
+
+        <section id="message" class="section">
+            <h2>Message Us</h2>
+            <form id="messageForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required />
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required>
+            <option value="" disabled selected>Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <div id="result" class="result"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Menghubungkan file JavaScript -->
+</body>
+
+</html>
